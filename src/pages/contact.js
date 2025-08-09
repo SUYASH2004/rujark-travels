@@ -1,9 +1,10 @@
 import BackButton from "@/components/BackButton";
+import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa"; // Icons
 
 export default function Contact() {
   return (
     <>
-      {/* Back button at the absolute top */}
+      {/* Back button */}
       <div className="p-4">
         <BackButton />
       </div>
@@ -18,13 +19,38 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-              <p className="mb-2"><strong>Phone:</strong> +91 95588 29696</p>
-              <p className="mb-2"><strong>Email:</strong> paryatanofficial@gmail.com</p>
-              <p className="mb-4"><strong>Address:</strong> 179 - Main Road, Jyoti Nagar, Aurangabad</p>
-              <div className="flex space-x-4">
-                <a href="https://instagram.com" className="hover:text-pink-500 transition">Instagram</a>
-                <a href="https://facebook.com" className="hover:text-blue-500 transition">Facebook</a>
-                <a href="mailto:paryatanofficial@gmail.com" className="hover:text-red-500 transition">Gmail</a>
+              <p className="mb-2">
+                <strong>Phone:</strong> +91 95588 29696
+              </p>
+              <p className="mb-2">
+                <strong>Email:</strong> paryatanofficial@gmail.com
+              </p>
+              <p className="mb-4">
+                <strong>Address:</strong> 179 - Main Road, Jyoti Nagar, Aurangabad
+              </p>
+              <div className="flex space-x-6 text-2xl">
+                <a
+                  href="https://instagram.com"
+                  className="hover:text-pink-500 transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  className="hover:text-blue-500 transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="mailto:paryatanofficial@gmail.com"
+                  className="hover:text-red-500 transition"
+                >
+                  <FaEnvelope />
+                </a>
               </div>
             </div>
 
@@ -32,9 +58,21 @@ export default function Contact() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-semibold mb-4">Send Us a Message</h2>
               <form className="space-y-4">
-                <input type="text" placeholder="Your Name" className="w-full p-3 border rounded focus:outline-none" />
-                <input type="email" placeholder="Your Email" className="w-full p-3 border rounded focus:outline-none" />
-                <textarea placeholder="Your Message" rows="5" className="w-full p-3 border rounded focus:outline-none"></textarea>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-3 border rounded focus:outline-none"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full p-3 border rounded focus:outline-none"
+                />
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  className="w-full p-3 border rounded focus:outline-none"
+                ></textarea>
                 <button className="bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-3 rounded-full text-white hover:from-yellow-500 hover:to-orange-600 transition w-full">
                   Send Message
                 </button>

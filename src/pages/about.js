@@ -73,7 +73,7 @@ const About = () => {
         >
           <h1 className="text-5xl md:text-5xl font-bold mb-4 text-yellow-400">About Us</h1>
           <p className="text-lg text-gray-700">
-            Welcome to Paryatan Tours, your gateway to unforgettable travel experiences. We are a passionate team of travel enthusiasts dedicated to curating exceptional tours that inspire adventure, discovery, and connection.
+            Welcome to Rujark Tours, your gateway to unforgettable travel experiences. We are a passionate team of travel enthusiasts dedicated to curating exceptional tours that inspire adventure, discovery, and connection.
             <br /><br />
             Founded on the belief that travel enriches the soul and broadens the mind, Paryatan has been helping explorers like you embark on journeys filled with wonder and excitement. Whether you&apos;re seeking the thrill of uncharted territories, the tranquility of serene landscapes, or a deep dive into cultural wonders, we have a perfect itinerary tailored just for you.
             <br /><br />

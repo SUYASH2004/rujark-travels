@@ -65,7 +65,7 @@ const Services = () => {
       </div>
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
-        At Rujark Travels, we offer a range of tours designed to give you
+        At Rujark Tours, we offer a range of tours designed to give you
         unforgettable experiences — from thrilling adventures to peaceful pilgrimages.
       </p>
 
