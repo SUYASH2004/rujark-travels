@@ -7,9 +7,10 @@ const About = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    "/images/travel1.jpg",
-    "/images/travel2.jpg",
-    "/images/travel3.jpg"
+    "/about/about1.jpg",
+    "/about/about2.jpg",
+    "/about/about3.jpg",
+    "/about/about4.jpg"
   ];
 
   // Auto slideshow
@@ -64,10 +65,13 @@ const About = () => {
         >
           <h1 className="text-4xl font-bold mb-4">About Rujark Travels</h1>
           <p className="text-lg text-gray-700">
-            At Rujark Travels, we believe that travel is more than just visiting a new place; 
-            it’s about immersing yourself in different cultures, creating lasting memories, 
-            and discovering the world's wonders. Our passion for exploration and commitment to 
-            providing exceptional travel experiences drive everything we do.
+            Welcome to Paryatan Tours, your gateway to unforgettable travel experiences. We are a passionate team of travel enthusiasts dedicated to curating exceptional tours that inspire adventure, discovery, and connection.
+
+Founded on the belief that travel enriches the soul and broadens the mind, Paryatan has been helping explorers like you embark on journeys filled with wonder and excitement. Whether you're seeking the thrill of uncharted territories, the tranquility of serene landscapes, or a deep dive into cultural wonders, we have a perfect itinerary tailored just for you.
+
+At Paryatan, we pride ourselves on delivering personalized, high-quality travel experiences. Our carefully crafted tours combine expert local knowledge with a commitment to sustainable and responsible tourism, ensuring that every trip not only meets your expectations but exceeds them.
+
+Join us as we navigate the world, one adventure at a time. Let us take care of the details while you focus on making memories that will last a lifetime.
           </p>
         </motion.div>
 
@@ -76,13 +80,28 @@ const About = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg"
+          className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg"
         >
           <img
             src={images[currentImage]}
             alt="Travel"
             className="w-full h-full object-cover transition-all duration-1000"
           />
+
+          {/* Pagination Dots */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImage(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentImage === index
+                    ? "bg-yellow-500 scale-125"
+                    : "bg-white/70 hover:bg-yellow-400"
+                }`}
+              ></button>
+            ))}
+          </div>
         </motion.div>
       </div>
 
