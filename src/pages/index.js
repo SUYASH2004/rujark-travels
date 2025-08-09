@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import Link from "next/link"; // ✅ Import Link for navigation
 
 export default function Home() {
   return (
@@ -22,12 +23,12 @@ export default function Home() {
             just for you. Experience the beauty of the world with our expert
             guides and sustainable travel practices.
           </p>
-          <a
+          <Link
             href="/plans"
             className="bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-3 rounded-full text-lg font-medium text-white hover:from-yellow-500 hover:to-orange-600 transition"
           >
             View plans
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -68,11 +69,11 @@ export default function Home() {
           <div>
             <h2 className="text-4xl font-bold text-yellow-400 mb-4">Quick Links</h2>
             <ul className="space-y-2">
-              <li><a href="/" className="text-xl hover:text-yellow-400">Home</a></li>
-              <li><a href="/about" className="text-xl hover:text-yellow-400">About Us</a></li>
-              <li><a href="/services" className="text-xl hover:text-yellow-400">Our Services</a></li>
-              <li><a href="/plans" className="text-xl hover:text-yellow-400">Plans</a></li>
-              <li><a href="/contact" className="text-xl hover:text-yellow-400">Contact Us</a></li>
+              <li><Link href="/" className="text-xl hover:text-yellow-400">Home</Link></li>
+              <li><Link href="/about" className="text-xl hover:text-yellow-400">About Us</Link></li>
+              <li><Link href="/services" className="text-xl hover:text-yellow-400">Our Services</Link></li>
+              <li><Link href="/plans" className="text-xl hover:text-yellow-400">Plans</Link></li>
+              <li><Link href="/contact" className="text-xl hover:text-yellow-400">Contact Us</Link></li>
             </ul>
             <div className="mt-4 space-y-2 text-gray-300">
               <p className="flex items-center space-x-2"><MdPhone /> <span>+91 95588 29696</span></p>

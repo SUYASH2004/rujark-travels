@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link"; // ✅ Import Next.js Link
 
 export default function Navbar({ bgWhite = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,6 +13,8 @@ export default function Navbar({ bgWhite = false }) {
 
   const logoColor = bgWhite ? "text-yellow-500" : "text-yellow-400";
 
+  const navItems = ["Home", "About", "Services", "Plans", "Contact"];
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full p-4 md:p-6 z-50 ${
@@ -20,23 +23,23 @@ export default function Navbar({ bgWhite = false }) {
     >
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className={`text-3xl sm:text-4xl md:text-5xl font-bold ${logoColor}`}
         >
           Rujark-Tours
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-24">
-          {["Home", "About", "Services", "Plans", "Contact"].map((item) => (
-            <a
+          {navItems.map((item) => (
+            <Link
               key={item}
               href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
               className={`text-xl font-bold ${baseColor} ${hoverGradient}`}
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -56,14 +59,14 @@ export default function Navbar({ bgWhite = false }) {
             bgWhite ? "bg-white" : "bg-black/80"
           }`}
         >
-          {["Home", "About", "Services", "Plans", "Contact"].map((item) => (
-            <a
+          {navItems.map((item) => (
+            <Link
               key={item}
               href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
               className={`text-lg font-bold ${baseColor} ${hoverGradient}`}
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}
