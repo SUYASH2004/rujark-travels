@@ -1,6 +1,4 @@
-export default function Navbar(){
-    return (
-        <nav className="flex justify-between items-center p-6 shadow-md sticky top-0 bg-white z-50">
+import { useState } from "react";
 
 export default function Navbar({ bgWhite = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
