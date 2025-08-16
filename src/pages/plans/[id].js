@@ -30,32 +30,30 @@ export default function PlanDetails() {
   return (
     <div className="bg-gray-50 min-h-screen py-10">
       <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
-        {/* Image */}
-        <div className="relative h-72 w-full">
+        {/* Image with Overlay Info */}
+        <div className="relative h-125 w-full">
           <Image
             src={plan.img}
             alt={plan.title}
-            fill // ✅ Automatically covers width/height
+            fill
             style={{ objectFit: "cover" }}
             priority
           />
-          <span className="absolute bottom-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-lg shadow">
-            {plan.duration}
-          </span>
+
+          {/* Overlay Content */}
+          <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+            <h1 className="text-4xl font-bold text-white">{plan.title}</h1>
+            <p className="text-lg text-gray-200 mt-1">{plan.duration}</p>
+            <p className="text-2xl font-semibold text-green-300 mt-2">
+              Price: {plan.price}
+            </p>
+          </div>
         </div>
 
         {/* Content */}
         <div className="p-8">
-          <h1 className="text-4xl font-bold text-gray-800">{plan.title}</h1>
-          <p className="text-lg text-gray-600 mt-2">{plan.duration}</p>
-          <p className="text-xl font-semibold text-green-700 mt-3">
-            Price: {plan.price}
-          </p>
-
           {/* Itinerary */}
-          <h2 className="mt-8 text-2xl font-semibold border-b pb-2">
-            Itinerary
-          </h2>
+          <h2 className="mt-2 text-2xl font-semibold border-b pb-2">Itinerary</h2>
           <ul className="mt-4 space-y-3">
             {Array.isArray(plan.details) && plan.details.length > 0 ? (
               plan.details.map((day, index) => (
