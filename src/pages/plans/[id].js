@@ -36,7 +36,7 @@ export default function PlanDetails() {
             src={plan.img}
             alt={plan.title}
             fill
-            style={{ objectFit: "cover" }}
+            className="object-cover"   // ✅ Tailwind instead of style
             priority
           />
 
