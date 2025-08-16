@@ -33,9 +33,37 @@ export default function CustomPlan() {
     }
   };
 
+  // Validate before submit
+  const validateForm = () => {
+    // check all fields
+    if (
+      !formData.name.trim() ||
+      !formData.title.trim() ||
+      !formData.contact.trim() ||
+      !formData.email.trim() ||
+      !formData.days.trim() ||
+      !formData.pickup.trim()
+    ) {
+      return false;
+    }
+
+    // check all locations
+    for (let loc of formData.locations) {
+      if (!loc.trim()) return false;
+    }
+
+    return true;
+  };
+
   // Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      alert("⚠️ Please fill in all fields and locations.");
+      return;
+    }
+
     try {
       const res = await fetch("/api/custom-plan", {
         method: "POST",
@@ -178,6 +206,7 @@ export default function CustomPlan() {
               placeholder={`Location ${index + 1}`}
               value={loc}
               onChange={(e) => handleLocationChange(index, e.target.value)}
+              required
               className="w-full p-3 border rounded"
             />
           ))}

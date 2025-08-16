@@ -8,8 +8,23 @@ export default async function handler(req, res) {
 
   const { name, title, contact, email, days, pickup, locations } = req.body;
 
+  // ✅ Validate required fields
+  if (
+    !name?.trim() ||
+    !title?.trim() ||
+    !contact?.trim() ||
+    !email?.trim() ||
+    !days ||
+    !pickup?.trim() ||
+    !Array.isArray(locations) ||
+    locations.length === 0 ||
+    locations.some((loc) => !loc?.trim())
+  ) {
+    return res.status(400).json({ message: "⚠️ All fields including locations are mandatory." });
+  }
+
   try {
-    // ✅ Debug logs to confirm env variables (safe to log lengths, not values)
+    // ✅ Debug logs (only safe metadata, not secrets)
     console.log("✅ GOOGLE_SHEET_ID:", process.env.GOOGLE_SHEET_ID);
     console.log("✅ GOOGLE_PROJECT_ID:", process.env.GOOGLE_PROJECT_ID);
     console.log("✅ GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
@@ -31,11 +46,11 @@ export default async function handler(req, res) {
     const sheets = google.sheets({ version: "v4", auth });
 
     // ✅ Combine multiple locations into a single string
-    const locationsStr = locations && locations.length > 0 ? locations.join(", ") : "";
+    const locationsStr = locations.join(", ");
 
-    // ✅ Append to Google Sheets (7 columns: A–G)
+    // ✅ Append to Google Sheets
     await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.GOOGLE_SHEET_ID, // must exist in .env.local
+      spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: "Sheet1!A:G",
       valueInputOption: "USER_ENTERED",
       requestBody: {
