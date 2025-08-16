@@ -1,10 +1,14 @@
 import plans from "../data/plans";
 import Image from "next/image";
 import Link from "next/link";
+import BackButton from "../components/BackButton"; // ✅ import back button
 
 export default function PlansPage() {
   return (
     <div className="p-6 bg-white">
+      {/* Back Button */}
+      <BackButton /> 
+
       <h1 className="text-4xl font-bold text-center mb-8 text-yellow-600">
         Our Travel Plans
       </h1>

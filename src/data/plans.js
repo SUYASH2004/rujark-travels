@@ -107,7 +107,7 @@ const plans = [
     id: "5",
     title: "Madurai-Rameshwaram-Karaikudi-Tanjawar-Kumbhakonam-Tirucharapalli-Kanchipuram-Tirupati-Tirumala-Kalhasti Tour",
     img: "/plans/kanchipuram1.jpg",
-    duration: "",
+    duration: "Contact for duration",
     price: "Contact for prices",
     details: [
       {
