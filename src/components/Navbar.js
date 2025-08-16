@@ -13,7 +13,8 @@ export default function Navbar({ bgWhite = false }) {
 
   const logoColor = bgWhite ? "text-yellow-500" : "text-yellow-400";
 
-  const navItems = ["Home", "About", "Services", "Plans", "Contact"];
+  // ✅ Added Custom Plans
+  const navItems = ["Home", "About", "Services", "Plans", "Custom Plan", "Contact"];
 
   return (
     <nav
@@ -35,7 +36,7 @@ export default function Navbar({ bgWhite = false }) {
           {navItems.map((item) => (
             <Link
               key={item}
-              href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
+              href={`/${item.toLowerCase().replace(" ", "-") === "home" ? "" : item.toLowerCase().replace(" ", "-")}`}
               className={`text-xl font-bold ${baseColor} ${hoverGradient}`}
             >
               {item}
@@ -62,7 +63,7 @@ export default function Navbar({ bgWhite = false }) {
           {navItems.map((item) => (
             <Link
               key={item}
-              href={`/${item.toLowerCase() === "home" ? "" : item.toLowerCase()}`}
+              href={`/${item.toLowerCase().replace(" ", "-") === "home" ? "" : item.toLowerCase().replace(" ", "-")}`}
               className={`text-lg font-bold ${baseColor} ${hoverGradient}`}
             >
               {item}
