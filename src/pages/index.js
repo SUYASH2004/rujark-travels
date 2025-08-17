@@ -16,7 +16,10 @@ export default function Home() {
 
         <div className="relative text-center text-white max-w-2xl px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg text-yellow-400">
-            Discover the Undiscovered with Rujark Tours.
+            Discover the Undiscovered with Rujark Tours. 
+          </h1>
+          <h1 className="text-5xl md:text-2xl font-bold mb-4 drop-shadow-lg text-yellow-400">
+            Registered company, start up promoted by Nutan Incubation center, NMIET 
           </h1>
           <p className="text-lg md:text-xl text-white font-semibold mb-6 drop-shadow-md">
             Embark on unforgettable journeys crafted with passion, personalized
@@ -78,7 +81,7 @@ export default function Home() {
             <div className="mt-4 space-y-2 text-gray-300">
               <p className="flex items-center space-x-2"><MdPhone /> <span>+91 95588 29696</span></p>
               <p className="flex items-center space-x-2"><MdEmail /> <span>paryatanofficial@gmail.com</span></p>
-              <p className="flex items-center space-x-2"><MdLocationOn /> <span>179 - Main Road, Jyoti Nagar, Aurangabad</span></p>
+              <p className="flex items-center space-x-1"><MdLocationOn size={50} /> <span>Row House no C-2, Srinivas ,Akshay Labh Society, Behind Wokhard Benchmark,Gate No 86, Nakshatrawadi, Aurangabad (MAH) 431002</span></p>
             </div>
           </div>
 

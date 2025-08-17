@@ -26,9 +26,9 @@ export default function Navbar({ bgWhite = false }) {
         {/* Logo */}
         <Link
           href="/"
-          className={`text-3xl sm:text-4xl md:text-5xl font-bold ${logoColor}`}
+          className={`text-2xl sm:text-3xl md:text-3xl font-bold ${logoColor}`}
         >
-          Rujark-Tours
+          Rujark-Tours <br></br>And Travels LLP
         </Link>
 
         {/* Desktop Menu */}

@@ -4,7 +4,7 @@ const plans = [
     title: "Bangalore Tour",
     img: "/plans/banglore1.jpg",
     duration: "3 Days / 2 Nights",
-    price: "₹7,000 (SL) / ₹8,500 (AC)",
+    price: "Contact for prices",
     details: [
       {
         day: "Day 1",
@@ -26,7 +26,7 @@ const plans = [
     title: "Jaipur - Jaisalmer - Sam - Jodhpur Tour",
     img: "/plans/jaipur1.jpg",
     duration: "6 Days / 5 Nights",
-    price: "₹17,000 (3AC) / ₹14,500 (SL)",
+    price: "Contact for prices",
     details: [
       {
         day: "Day 1",
