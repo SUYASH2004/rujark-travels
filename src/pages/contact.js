@@ -26,7 +26,7 @@ export default function Contact() {
                 <strong>Email:</strong> paryatanofficial@gmail.com
               </p>
               <p className="mb-4">
-                <strong>Address:</strong> 179 - Main Road, Jyoti Nagar, Aurangabad
+                <strong>Address:</strong> Row House no C-2, Srinivas ,Akshay Labh Society, Behind Wokhard Benchmark,Gate No 86, Nakshatrawadi, Aurangabad (MAH) 431002
               </p>
               <div className="flex space-x-6 text-2xl">
                 <a
