@@ -35,6 +35,24 @@ const servicesData = [
     description:
       "Create your own travel story with our tailor-made tours. We customize every detail to suit your preferences, making your journey truly unique.",
   },
+  {
+    title: "Jungle Safari",
+    img: "/services/jungle_safari.jpg",
+    description:
+      "Explore the wild heart of India with our exciting Jungle Safari tours. Witness the majestic Royal Bengal Tiger, exotic birds, and diverse wildlife in Ranthambore, Jim Corbett, and more, all with expert naturalists.",
+  },
+  {
+    title: "International Tours",
+    img: "/services/international.jpg",
+    description:
+      "Expand your horizons with our handpicked international tour packages. From the stunning landscapes of Europe to the vibrant cultures of Southeast Asia, Rujark Tours brings the world closer to you with seamless travel planning.",
+  },
+  {
+    title: "My Fair Lady",
+    img: "/services/fair_lady.jpg",
+    description:
+      "Empowering and safe tours for female travelers. Discover India’s beauty with thoughtfully planned itineraries, secure accommodations, and expert female guides for a truly comfortable and memorable journey.",
+  }
 ];
 
 const Services = () => {
