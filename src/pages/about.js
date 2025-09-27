@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { MapPin, User, Leaf, Users, Star } from "lucide-react";
+import { MapPin, User, Leaf, Users, Star, Award } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -112,6 +112,23 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Registration Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="flex justify-center mb-12"
+      >
+        <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 border-2 border-yellow-600 rounded-xl p-6 shadow-lg max-w-2xl w-full text-center">
+          <div className="flex items-center justify-center mb-3">
+            <Award className="w-8 h-8 mr-3 text-white" />
+            <span className="text-white font-bold text-lg md:text-xl">
+              Registered company, start up promoted by Nutan Incubation center, NMIET
+            </span>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Why Choose Us */}
       <h2 className="text-2xl font-bold mb-6 text-center text-yellow-500">

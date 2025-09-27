@@ -18,9 +18,6 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg text-yellow-400">
             Discover the Undiscovered with Rujark Tours. 
           </h1>
-          <h1 className="text-5xl md:text-2xl font-bold mb-4 drop-shadow-lg text-yellow-400">
-            Registered company, start up promoted by Nutan Incubation center, NMIET 
-          </h1>
           <p className="text-lg md:text-xl text-white font-semibold mb-6 drop-shadow-md">
             Embark on unforgettable journeys crafted with passion, personalized
             just for you. Experience the beauty of the world with our expert
