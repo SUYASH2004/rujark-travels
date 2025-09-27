@@ -291,7 +291,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-gray-400">Email Us</div>
-                    <div className="text-xl font-semibold">paryatanofficial@gmail.com</div>
+                    <div className="text-xl font-semibold">rujarktours@gmail.com</div>
                   </div>
                 </div>
 
@@ -309,7 +309,7 @@ export default function Home() {
               {/* Social Links */}
               <div className="flex space-x-4">
                 {[
-                  { icon: FaInstagram, color: "hover:text-pink-500", href: "https://instagram.com" },
+                  { icon: FaInstagram, color: "hover:text-pink-500", href: "https://www.instagram.com/paryatan_official?igsh=ejBzcHl1aG84Nmwx" },
                   { icon: FaFacebookF, color: "hover:text-blue-500", href: "https://facebook.com" }
                 ].map((social, index) => (
                   <a
