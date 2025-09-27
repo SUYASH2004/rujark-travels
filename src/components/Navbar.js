@@ -346,7 +346,7 @@ export default function Navbar({ bgWhite = false }) {
           href="/"
           className={`text-2xl sm:text-3xl md:text-3xl font-bold ${logoColor}`}
         >
-          Rujark-Tours <br></br>And Travels LLP
+          Rujark-Tours <br />And Travels LLP
         </Link>
 
         {/* Desktop Menu */}
@@ -441,7 +441,7 @@ export default function Navbar({ bgWhite = false }) {
                   <div className={`mt-2 p-3 text-center rounded ${
                     bgWhite ? "bg-gray-100 text-gray-600" : "bg-gray-100 text-gray-600"
                   }`}>
-                    No plans found matching "{searchQuery}"
+                    No plans found matching &quot;{searchQuery}&quot;
                   </div>
                 )}
               </div>
@@ -523,7 +523,7 @@ export default function Navbar({ bgWhite = false }) {
 
           {searchQuery && searchResults.length === 0 && searchQuery.length >= 3 && (
             <div className="mt-2 p-3 text-center bg-gray-100 text-gray-600 rounded">
-              No plans found matching "{searchQuery}"
+              No plans found matching &quot;{searchQuery}&quot;
             </div>
           )}
         </div>

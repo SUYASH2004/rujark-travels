@@ -33,7 +33,7 @@ export default function PlanDetails() {
           Oops! Plan not found.
         </h1>
         <p className="text-gray-600 mb-4">
-          The plan you're looking for doesn't exist or has been removed.
+         desc: {"The plan you're looking for doesn't exist or has been removed."}
         </p>
         <button
           onClick={() => router.push("/plans")}
