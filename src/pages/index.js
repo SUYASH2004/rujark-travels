@@ -186,7 +186,7 @@ export default function Home() {
                       {/* Testimonial Content */}
                       <div>
                         <p className="text-xl text-gray-200 leading-relaxed mb-6">
-                          desc:{"{testimonial.text}"}
+                          {testimonial.text}
                         </p>
                         
                         <div className="flex items-center mb-4">
