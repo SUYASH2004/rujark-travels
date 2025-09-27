@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Your plans data with keywords
 const plans = [
@@ -344,9 +345,17 @@ export default function Navbar({ bgWhite = false }) {
         {/* Logo */}
         <Link
           href="/"
-          className={`text-2xl sm:text-3xl md:text-3xl font-bold ${logoColor}`}
+          className={`flex items-center`}
         >
-          Rujark-Tours <br />And Travels LLP
+          <div className="relative w-32 h-20 md:w-36 md:h-24">
+            <Image
+              src="/logo.png"
+              alt="Rujark Tours and Travels LLP"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -441,7 +450,8 @@ export default function Navbar({ bgWhite = false }) {
                   <div className={`mt-2 p-3 text-center rounded ${
                     bgWhite ? "bg-gray-100 text-gray-600" : "bg-gray-100 text-gray-600"
                   }`}>
-                    No plans found matching &quot;{searchQuery}&quot;
+                    desc: {"No plans found matching"
+                    + "{searchQuery}"}
                   </div>
                 )}
               </div>
@@ -523,7 +533,7 @@ export default function Navbar({ bgWhite = false }) {
 
           {searchQuery && searchResults.length === 0 && searchQuery.length >= 3 && (
             <div className="mt-2 p-3 text-center bg-gray-100 text-gray-600 rounded">
-              No plans found matching &quot;{searchQuery}&quot;
+              desc:{"No plans found matching" + "{searchQuery}"}
             </div>
           )}
         </div>
