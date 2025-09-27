@@ -81,7 +81,7 @@ export default function Home() {
             <div className="mt-4 space-y-2 text-gray-300">
               <p className="flex items-center space-x-2"><MdPhone /> <span>+91 95588 29696</span></p>
               <p className="flex items-center space-x-2"><MdEmail /> <span>paryatanofficial@gmail.com</span></p>
-              <p className="flex items-center space-x-1"><MdLocationOn size={50} /> <span>Row House no C-2, Srinivas ,Akshay Labh Society, Behind Wokhard Benchmark,Gate No 86, Nakshatrawadi, Aurangabad (MAH) 431002</span></p>
+              <p className="flex items-center space-x-1"><MdLocationOn /> <span>Talegaon Dabhade, Pune</span></p>
             </div>
           </div>
 
