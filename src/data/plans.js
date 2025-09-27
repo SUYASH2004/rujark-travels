@@ -5,6 +5,7 @@ const plans = [
     img: "/plans/banglore1.jpg",
     duration: "3 Days / 2 Nights",
     price: "Contact for prices",
+    keywords: ["Bangalore", "Bengaluru", "Mysore", "Mysuru", "KSR Bengaluru", "Tipu Sultan Palace", "Cubbon Park", "Commercial Street", "Botanical Garden", "Visvesvaraya Museum"],
     details: [
       {
         day: "Day 1",
@@ -27,6 +28,7 @@ const plans = [
     img: "/plans/jaipur1.jpg",
     duration: "6 Days / 5 Nights",
     price: "Contact for prices",
+    keywords: ["Jaipur", "Jaisalmer", "Sam", "Jodhpur", "Albert Hall", "Birla Temple", "City Palace", "Jantar Mantar", "Hawa Mahal", "Amer Fort", "Jal Mahal", "Sam Sand Dunes", "Sonar Fort", "Gadsisar Lake", "Patwon Ki Haveli", "Umaid Bhawan", "Mehrangarh Fort", "Jaswant Thada"],
     details: [
       {
         day: "Day 1",
@@ -61,6 +63,7 @@ const plans = [
     img: "/plans/manali1.jpg",
     duration: "6 Days / 5 Nights",
     price: "Contact for pricing",
+    keywords: ["Chandigarh", "Manali", "Amritsar", "Kullu", "Rock Garden", "Rose Garden", "Hadimba Devi Temple", "Club House", "Tibetan Monastery", "Van Vihar", "Mall Road", "Solang Valley", "Beas River", "Angora Farm", "Vaishno Devi Temple", "Golden Temple", "Jallianwala Bagh", "Wagah Border"],
     details: [
       {
         day: "Day 1",
@@ -95,6 +98,7 @@ const plans = [
     img: "/plans/rameshwaram1.jpg",
     duration: "6 days n 5 Night",
     price: "Contact for prices",
+    keywords: ["Madurai", "Rameshwaram", "Karaikudi", "Tanjavur", "Tanjawar", "Kumbhakonam", "Tiruchirapalli"],
     details: [
       {
         day: "Day 1",
@@ -109,6 +113,7 @@ const plans = [
     img: "/plans/kanchipuram1.jpg",
     duration: "Contact for duration",
     price: "Contact for prices",
+    keywords: ["Madurai", "Rameshwaram", "Karaikudi", "Tanjavur", "Tanjawar", "Kumbhakonam", "Tiruchirapalli", "Kanchipuram", "Tirupati", "Tirumala", "Kalahasti"],
     details: [
       {
         day: "Day 1",
@@ -123,6 +128,7 @@ const plans = [
     img: "/plans/kashi1.jpg",
     duration: "5 days and 4 night",
     price: "Contact for prices",
+    keywords: ["Kashi", "Varanasi", "Prayagraj", "Allahabad", "Ayodhya"],
     details: [
       {
         day: "Day 1",
@@ -137,6 +143,7 @@ const plans = [
     img: "/plans/shrinagar1.jpg",
     duration: "6 days and 5 night",
     price: "Contact for prices",
+    keywords: ["Srinagar", "Sonmarg", "Gulmarg", "Pahalgam", "Pahelgam"],
     details: [
       {
         day: "Day 1",
@@ -151,6 +158,7 @@ const plans = [
     img: "/plans/gulmarg1.jpg",
     duration: "7 days and 8 night",
     price: "Contact for prices",
+    keywords: ["Srinagar", "Sonmarg", "Gulmarg", "Pahalgam", "Pahelgam", "Vaishnavi Devi", "Jammu"],
     details: [
       {
         day: "Day 1",
@@ -165,6 +173,7 @@ const plans = [
     img: "/plans/amritsar1.jpg",
     duration: "Contact for duration",
     price: "Contact for prices",
+    keywords: ["Kullu", "Manali", "Amritsar", "Chandigarh", "Wagah Border"],
     details: [
       {
         day: "Day 1",
@@ -179,6 +188,7 @@ const plans = [
     img: "/plans/coochin1.jpg",
     duration: "Contact for duration",
     price: "Contact for prices",
+    keywords: ["Cochin", "Kochi", "Munnar", "Marayoor", "Ernakulam", "Sandalwood forest", "Jaggery factory", "Katcharam waterfalls", "Tea factory", "Mattupetty Dam", "Kundala Dam", "Top Station"],
     details: [
       {
         day: "Day 1",
@@ -213,6 +223,7 @@ const plans = [
     img: "/plans/Mysuru1.jpg",
     duration: "Contact for duration",
     price: "Contact for prices",
+    keywords: ["Bangalore", "Bengaluru", "Mysore", "Mysuru"],
     details: [
       {
         day: "Day 1",
@@ -222,11 +233,12 @@ const plans = [
     contact: "+91 95588 29696"
   },
   {
-    id: "12 ",
+    id: "12",
     title: "Jaipur – Jodhpur – Jaisalmer Tour",
     img: "/plans/jodhpur1.jpg",
     duration: "Contact for duration",
     price: "Contact for prices",
+    keywords: ["Jaipur", "Jodhpur", "Jaisalmer"],
     details: [
       {
         day: "Day 1",
