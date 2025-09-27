@@ -30,7 +30,7 @@ export default function Contact() {
               </p>
               <div className="flex space-x-6 text-2xl">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/paryatan_official?igsh=ejBzcHl1aG84Nmwx"
                   className="hover:text-pink-500 transition"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Contact() {
                   <FaFacebook />
                 </a>
                 <a
-                  href="mailto:paryatanofficial@gmail.com"
+                  href="mailto:rujarktours@gmail.com"
                   className="hover:text-red-500 transition"
                 >
                   <FaEnvelope />
