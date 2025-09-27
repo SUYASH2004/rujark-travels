@@ -23,10 +23,10 @@ export default function Contact() {
                 <strong>Phone:</strong> +91 95588 29696
               </p>
               <p className="mb-2">
-                <strong>Email:</strong> paryatanofficial@gmail.com
+                <strong>Email:</strong> rujarktours@gmail.com
               </p>
               <p className="mb-4">
-                <strong>Address:</strong> Row House no C-2, Srinivas ,Akshay Labh Society, Behind Wokhard Benchmark,Gate No 86, Nakshatrawadi, Aurangabad (MAH) 431002
+                <strong>Address:</strong> Talegaon Dabhade, Pune
               </p>
               <div className="flex space-x-6 text-2xl">
                 <a
