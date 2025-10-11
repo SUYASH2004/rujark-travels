@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ChatBot from "@/components/ChatBot";
 import { FaInstagram, FaFacebookF, FaStar, FaQuoteLeft } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn, MdArrowForward } from "react-icons/md";
 import Link from "next/link";
@@ -160,8 +161,8 @@ export default function Home() {
             <h2 className="text-5xl font-bold text-white mb-4">
               What Our <span className="text-yellow-400">Travelers Say</span>
             </h2>
-            <p className="text-xl text-black-300 max-w-2xl mx-auto">
-              desc: {"Don't just take our word for it. Here's what our adventurers have to say about their experiences."}
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Don't just take our word for it. Here's what our adventurers have to say about their experiences.
             </p>
           </div>
 
@@ -247,8 +248,8 @@ export default function Home() {
           </div>
 
           {/* Trust Badges */}
-<div className="text-center mt-16">
-            {/* <div className="inline-flex flex-wrap justify-center gap-8 opacity-100 ">
+          <div className="text-center mt-16">
+            {/* <div className="inline-flex flex-wrap justify-center gap-8 opacity-100">
               {["TripAdvisor", "Google Reviews", "Travel+Leisure", "Lonely Planet"].map((badge) => (
                 <div key={badge} className="text-yellow-400 font-semibold text-sm">
                   ⭐ {badge} Certified
@@ -269,7 +270,7 @@ export default function Home() {
               <div>
                 <h2 className="text-5xl font-bold text-yellow-400 mb-4">Ready for Your Adventure?</h2>
                 <p className="text-xl text-gray-300">
-                 desc: {"Let's create your perfect journey together. We're here to make your travel dreams come true."}
+                  Let's create your perfect journey together. We're here to make your travel dreams come true.
                 </p>
               </div>
 
@@ -359,6 +360,9 @@ export default function Home() {
       </section>
 
       <Footer />
+      
+      {/* ChatBot Component */}
+      <ChatBot />
     </div>
   );
 }
