@@ -1,6 +1,6 @@
 // components/ChatBot.js
-import { useState, useEffect, useRef } from 'react';
-import { MdClose, MdSend, MdPerson, MdEmail, MdPhone, MdExpandMore } from "react-icons/md";
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { MdClose, MdSend, MdExpandMore } from "react-icons/md";
 
 const services = [
   {
@@ -153,13 +153,13 @@ export default function ChatBot() {
   const [showAllPlans, setShowAllPlans] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const scrollToBottom = () => {
+  const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, scrollToBottom]);
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
@@ -184,7 +184,7 @@ export default function ChatBot() {
         }]);
       }, 1000);
     }
-  }, [isOpen]);
+  }, [isOpen, messages.length]);
 
   const handleSendMessage = () => {
     if (!inputMessage.trim()) return;
@@ -548,7 +548,4 @@ export default function ChatBot() {
       )}
     </>
   );
-
-
-  
 }

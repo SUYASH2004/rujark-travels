@@ -24,7 +24,7 @@ export default function Home() {
       name: "Rajesh Kumar",
       location: "Delhi",
       rating: 5,
-      text: "The most professional tour company I've ever encountered. Every moment was perfectly planned, and the hidden gems they showed us were incredible.",
+      text: "The most professional tour company I&apos;ve ever encountered. Every moment was perfectly planned, and the hidden gems they showed us were incredible.",
       image: "/testimonial2.jpg",
       trip: "Cochin – Munnar – Marayoor Tour"
     },
@@ -53,7 +53,7 @@ export default function Home() {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -162,7 +162,7 @@ export default function Home() {
               What Our <span className="text-yellow-400">Travelers Say</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our adventurers have to say about their experiences.
+              Don&apos;t just take our word for it. Here&apos;s what our adventurers have to say about their experiences.
             </p>
           </div>
 
@@ -246,17 +246,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          {/* Trust Badges */}
-          <div className="text-center mt-16">
-            {/* <div className="inline-flex flex-wrap justify-center gap-8 opacity-100">
-              {["TripAdvisor", "Google Reviews", "Travel+Leisure", "Lonely Planet"].map((badge) => (
-                <div key={badge} className="text-yellow-400 font-semibold text-sm">
-                  ⭐ {badge} Certified
-                </div>
-              ))}          
-            </div> */}
-          </div>
         </div>
       </section>
 
@@ -270,7 +259,7 @@ export default function Home() {
               <div>
                 <h2 className="text-5xl font-bold text-yellow-400 mb-4">Ready for Your Adventure?</h2>
                 <p className="text-xl text-gray-300">
-                  Let's create your perfect journey together. We're here to make your travel dreams come true.
+                  Let&apos;s create your perfect journey together. We&apos;re here to make your travel dreams come true.
                 </p>
               </div>
 
@@ -361,7 +350,6 @@ export default function Home() {
 
       <Footer />
       
-      {/* ChatBot Component */}
       {/* ChatBot Component */}
       <ChatBot />
     </div>
