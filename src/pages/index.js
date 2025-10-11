@@ -362,6 +362,7 @@ export default function Home() {
       <Footer />
       
       {/* ChatBot Component */}
+      {/* ChatBot Component */}
       <ChatBot />
     </div>
   );
