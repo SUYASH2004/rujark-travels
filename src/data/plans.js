@@ -246,7 +246,67 @@ const plans = [
       },
     ],
     contact: "+91 95588 29696"
-  }
+  },
+  {
+  id: "13",
+  title: "Hyderabad City Tour",
+  img: "/plans/hyderabad1.jpg",
+  duration: "3 Days / 2 Nights",
+  price: "Contact for prices",
+  keywords: ["Hyderabad", "Charminar", "Golconda"],
+  details: [
+    {
+      day: "Day 1",
+      desc: ""
+    },
+  ],
+  contact: "+91 95588 29696"
+},
+{
+  id: "14",
+  title: "Ahmedabad Heritage Tour",
+  img: "/plans/ahmedabad1.jpg",
+  duration: "3 Days / 2 Nights",
+  price: "Contact for prices",
+  keywords: ["Ahmedabad", "Sabarmati", "Heritage"],
+  details: [
+    {
+      day: "Day 1",
+      desc: ""
+    },
+  ],
+  contact: "+91 95588 29696"
+},
+{
+  id: "15",
+  title: "Hubli and Dandeli Adventure",
+  img: "/plans/dandeli1.jpg",
+  duration: "3 Days / 2 Nights",
+  price: "Contact for prices",
+  keywords: ["Hubli", "Dandeli", "Adventure"],
+  details: [
+    {
+      day: "Day 1",
+      desc: ""
+    },
+  ],
+  contact: "+91 95588 29696"
+},
+{
+  id: "16",
+  title: "Halebid – Belur – Shravanabelagola - Hoysala – Hospet – Hampi – Badami – Pattadakal",
+  img: "/plans/hampi1.jpg",
+  duration: "4 Days / 3 Nights",
+  price: "Contact for prices",
+  keywords: ["Halebid", "Belur", "Shravanabelagola", "Hoysala", "Hospet", "Hampi", "Badami", "Pattadakal"],
+  details: [
+    {
+      day: "Day 1",
+      desc: ""
+    },
+  ],
+  contact: "+91 95588 29696"
+}
 ];
 
 export default plans;
